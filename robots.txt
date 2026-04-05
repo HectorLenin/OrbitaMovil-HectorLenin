@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Bloquear panel de administración de indexación
+Disallow: /#admin
+Disallow: /admin
+Disallow: /login
+
+# Permitir recursos estáticos
+Allow: /manifest.json
+Allow: /sw.js
+Allow: /sitemap.xml
+
+# Sitemap
+Sitemap: https://orbitamovil.vercel.app/sitemap.xml
+
+# Crawl-delay para no saturar el servidor
+Crawl-delay: 5
